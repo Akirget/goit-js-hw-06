@@ -30,15 +30,15 @@ const ingredients = [
   "Condiments",
 ];
 
-const allIngredients = document.getElementById("ingredients");
+const listIngredients = document.getElementById("ingredients");
 
-console.log(allIngredients);
-console.log(ingredients);
-const listAllIngredients = ingredients.map((ingredient) => {
-  const listAllIngredient = document.createElement("li");
-  listAllIngredient.textContent = ingredient;
-  listAllIngredient.classList.add("item");
-  return listAllIngredient;
+const listItemIngredients = ingredients.map((ingredient) => {
+  const ItemIngredient = document.createElement("li");
+  ItemIngredient.textContent = ingredient;
+  ItemIngredient.classList.add("item");
+  return ItemIngredient;
 });
+listIngredients.append(...listItemIngredients);
 
-allIngredients.append(...listAllIngredients);
+console.log(listIngredients);
+console.log(ingredients);
