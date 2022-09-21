@@ -14,4 +14,5 @@ function onInputClick(event) {
   if (event.currentTarget.value === "") {
     span.textContent = "Anonymous";
   }
+  console.log(event);
 }
